@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+        <% include ../includes/head %>
+</head>
+
+<body class="container">
+
+    <header>
+        <% include ../includes/header %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h3>Blog posts</h3>
+            <br>
+            <div class="list-group">
+                <!-- this loop makes blog posts to get them rendered  -->
+                <% posts.forEach((post) => { %>
+                    <a href="/post/<%= post.id %>" class="list-group-item">
+                        <h4 class="list-group-item-heading">
+                            <%= post.title %>
+                        </h4>
+                        <p class="list-group-item-text">
+                            <%= post.author %>
+                        </p>
+                    </a>
+                    <% }) %>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <% include ../includes/footer %>
+    </footer>
+
+</body>
+
+</html>

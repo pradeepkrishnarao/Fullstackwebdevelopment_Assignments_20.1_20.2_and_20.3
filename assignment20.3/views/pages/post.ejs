@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+        <% include ../includes/head %>
+</head>
+
+<body class="container">
+
+    <header>
+        <% include ../includes/header %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h3>Blog post details</h3>
+            <div>
+                <h4>
+                    <%= title %>
+                </h4>
+                <p>By
+                    <%= author %>
+                </p>
+
+                <p>
+                    <%= body %>
+                </p>
+                <hr>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <% include ../includes/footer %>
+    </footer>
+
+</body>
+
+</html>

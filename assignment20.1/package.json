@@ -1,0 +1,12 @@
+{
+  "name": "assignment20.1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": "index.js",
+  "author": "Pradeep Krishna Rao",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "~2.6.9",
+    "express": "~4.16.0"
+  }
+}
